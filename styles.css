@@ -10,6 +10,17 @@
 body {
     /* Reduce font size for the document to 10px (Assuming browser is set to have a medium text size) */
     font-size: 62.5%;
+    /* Horizontally set the alignment of all inline-level elements */
+    text-align: center;
+    color: #E0E1E9;
+    background-color: #1E1F1E;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.wrapper {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Set font size of headings in em */
@@ -20,3 +31,27 @@ h4 { font-size: 1.8em; } /* 18px */
 h5 { font-size: 1.6em; } /* 16px */
 h6 { font-size: 1.4em; } /* 14px */
 p { font-size: 1.2em; }  /* 12px */
+
+.keys {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.key {
+    border: 0.4em solid #141514;
+    border-radius: 0.5em;
+    margin: 1em;
+    font-size: 1.5em;
+    padding: 1em 0.5em;
+
+    width: 10rem;
+    text-shadow: 0 0 0.5em #000000;
+}
+
+kbd {
+    display: block;
+    font-size: 4em;
+}
